@@ -25,7 +25,7 @@ const connections: [number, number][] = [
 export function CaribbeanFirstSection() {
   return (
     <HomeSection
-      className="relative overflow-hidden bg-gradient-to-b from-atlantic-50 via-caribbean-50/30 to-background py-16 md:py-24"
+      className="relative overflow-hidden border-y border-surface-light-border bg-gradient-to-b from-atlantic-50 via-surface-light to-surface-light-soft py-16 md:py-24"
       aria-labelledby="caribbean-heading"
     >
       <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -33,14 +33,16 @@ export function CaribbeanFirstSection() {
           id="caribbean-heading"
           title="Designed for the Caribbean first."
           description="Tropicash is being built with Caribbean users, merchants, banks, and digital businesses in mind — starting locally, with the long-term goal of supporting broader regional financial connectivity."
+          light
+          badge="Regional focus"
+          badgeTone="green"
         />
 
-        {/* Abstract Caribbean network motif */}
         <div
           className="relative mx-auto aspect-[4/3] w-full max-w-md"
           aria-hidden="true"
         >
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-atlantic-100 via-atlantic-50 to-caribbean-100 shadow-lg" />
+          <div className="absolute inset-0 rounded-3xl border border-atlantic-100 bg-white shadow-lg" />
 
           <svg
             className="absolute inset-0 h-full w-full p-8"
@@ -49,8 +51,8 @@ export function CaribbeanFirstSection() {
           >
             <defs>
               <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#b3d9ed" stopOpacity="0.4" />
-                <stop offset="100%" stopColor="#6ee7b7" stopOpacity="0.3" />
+                <stop offset="0%" stopColor="#d6ecf6" stopOpacity="0.6" />
+                <stop offset="100%" stopColor="#d1fae5" stopOpacity="0.5" />
               </linearGradient>
             </defs>
 
@@ -70,9 +72,9 @@ export function CaribbeanFirstSection() {
                 y1={networkNodes[from].y}
                 x2={networkNodes[to].x}
                 y2={networkNodes[to].y}
-                stroke="#4a9dcc"
+                stroke="#2a80b3"
                 strokeWidth="0.5"
-                strokeOpacity="0.5"
+                strokeOpacity="0.45"
               />
             ))}
 
@@ -83,7 +85,7 @@ export function CaribbeanFirstSection() {
                   cy={node.y}
                   r={node.size / 2 + 2}
                   fill={i % 2 === 0 ? "#2a80b3" : "#10b981"}
-                  fillOpacity="0.15"
+                  fillOpacity="0.12"
                 />
                 <circle
                   cx={node.x}
@@ -95,7 +97,7 @@ export function CaribbeanFirstSection() {
             ))}
           </svg>
 
-          <div className="absolute bottom-6 left-6 right-6 rounded-xl border border-atlantic-200/60 bg-white/70 px-4 py-3 backdrop-blur-sm">
+          <div className="absolute bottom-6 left-6 right-6 rounded-xl border border-atlantic-100 bg-white px-4 py-3 shadow-sm">
             <p className="text-xs font-medium text-atlantic-700">
               Regional connectivity — illustrative network map
             </p>

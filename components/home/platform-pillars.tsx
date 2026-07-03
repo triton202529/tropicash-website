@@ -67,7 +67,7 @@ const pillars = [
 export function PlatformPillars() {
   return (
     <HomeSection
-      className="bg-gradient-to-b from-atlantic-50/50 to-background py-16 md:py-24"
+      className="border-y border-surface-light-border bg-gradient-to-b from-atlantic-50 to-surface-light-soft py-16 md:py-24"
       aria-labelledby="pillars-heading"
     >
       <SectionHeader
@@ -75,15 +75,16 @@ export function PlatformPillars() {
         title="One platform. Multiple payment layers."
         align="center"
         className="mx-auto"
+        light
       />
 
       <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {pillars.map((pillar, index) => (
           <Card
             key={pillar.title}
-            variant="elevated"
+            variant="light"
             className={cn(
-              "border-t-4 bg-white",
+              "border-t-4",
               pillar.accent,
               index === 4 && "sm:col-span-2 lg:col-span-1",
             )}

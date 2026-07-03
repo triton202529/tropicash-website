@@ -63,6 +63,17 @@
   --color-secondary-foreground: var(--color-neutral-900);
   --color-accent: var(--color-atlantic-50);
   --color-accent-foreground: var(--color-atlantic-700);
+
+  /*
+   * Light surfaces — fixed colors for white/off-white sections and cards.
+   * These values stay the same in dark mode so light sections remain readable.
+   */
+  --color-surface-light: #ffffff;
+  --color-surface-light-foreground: var(--color-neutral-900);
+  --color-surface-light-muted: var(--color-neutral-600);
+  --color-surface-light-subtle: var(--color-neutral-500);
+  --color-surface-light-border: var(--color-atlantic-100);
+  --color-surface-light-soft: var(--color-neutral-50);
 }
 
 [data-theme="dark"] {
@@ -78,4 +89,12 @@
   --color-secondary-foreground: var(--color-neutral-50);
   --color-accent: var(--color-atlantic-950);
   --color-accent-foreground: var(--color-atlantic-200);
+
+  /* Light surfaces — unchanged in dark mode for homepage light sections */
+  --color-surface-light: #ffffff;
+  --color-surface-light-foreground: var(--color-neutral-900);
+  --color-surface-light-muted: var(--color-neutral-600);
+  --color-surface-light-subtle: var(--color-neutral-500);
+  --color-surface-light-border: var(--color-atlantic-100);
+  --color-surface-light-soft: var(--color-neutral-50);
 }

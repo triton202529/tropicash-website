@@ -2,17 +2,38 @@ import Link from "next/link";
 import { HomeSection, SectionHeader } from "./section";
 import { cn } from "@/lib/utils";
 
+const capabilityCards = [
+  {
+    title: "Merchant payments",
+    description: "Accept and manage Tropicash transactions",
+    status: "Available",
+  },
+  {
+    title: "Wallet APIs",
+    description: "Integrate balances, transfers, and webhooks",
+    status: "In development",
+  },
+  {
+    title: "Partner rails",
+    description: "Connect banks and regulated payment flows",
+    status: "Partnerships",
+  },
+] as const;
+
 export function DeveloperBusinessCta() {
   return (
     <HomeSection
       className="py-16 md:py-24"
       aria-labelledby="developer-cta-heading"
     >
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-atlantic-800 via-atlantic-900 to-atlantic-950 p-8 md:p-12 lg:p-16">
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-atlantic-800 via-atlantic-900 to-atlantic-950 p-8 shadow-2xl md:p-12 lg:p-16">
         <div
           className="pointer-events-none absolute inset-0 overflow-hidden"
           aria-hidden="true"
-        />
+        >
+          <div className="absolute -top-16 -right-16 h-64 w-64 rounded-full bg-caribbean-400/10 blur-3xl" />
+          <div className="absolute -bottom-16 -left-16 h-64 w-64 rounded-full bg-atlantic-400/10 blur-3xl" />
+        </div>
 
         <div className="relative grid items-center gap-10 lg:grid-cols-2">
           <div>
@@ -38,7 +59,7 @@ export function DeveloperBusinessCta() {
               <Link
                 href="/contact"
                 className={cn(
-                  "inline-flex h-12 items-center justify-center rounded-xl border border-white/20",
+                  "inline-flex h-12 items-center justify-center rounded-xl border border-white/25",
                   "bg-white/10 px-6 text-sm font-semibold text-white backdrop-blur-sm",
                   "transition-colors hover:bg-white/20 focus-visible:outline-none",
                   "focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2",
@@ -50,36 +71,26 @@ export function DeveloperBusinessCta() {
             </div>
           </div>
 
-          {/* Abstract code/API visual */}
-          <div className="relative" aria-hidden="true">
-            <div className="rounded-2xl border border-white/10 bg-atlantic-950/60 p-6 font-mono text-sm shadow-xl backdrop-blur-sm">
-              <div className="mb-4 flex items-center gap-2">
-                <div className="h-3 w-3 rounded-full bg-caribbean-400" />
-                <div className="h-3 w-3 rounded-full bg-atlantic-400" />
-                <div className="h-3 w-3 rounded-full bg-atlantic-600" />
-                <span className="ml-2 text-xs text-atlantic-300">
-                  api.tropicash.com
+          <div className="relative space-y-3" aria-hidden="true">
+            {capabilityCards.map((card) => (
+              <div
+                key={card.title}
+                className="flex items-start gap-4 rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur-sm"
+              >
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-atlantic-500/20 text-atlantic-200">
+                  <div className="h-4 w-4 rounded-sm bg-atlantic-300" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-semibold text-white">{card.title}</p>
+                  <p className="mt-0.5 text-xs text-atlantic-200">
+                    {card.description}
+                  </p>
+                </div>
+                <span className="shrink-0 rounded-full border border-caribbean-400/30 bg-caribbean-500/20 px-2.5 py-0.5 text-[11px] font-medium text-caribbean-300">
+                  {card.status}
                 </span>
               </div>
-              <pre className="overflow-x-auto text-atlantic-200">
-                <code>{`POST /v1/wallets/transfer
-{
-  "amount": "••••",
-  "currency": "USD",
-  "recipient": "••••"
-}
-
-→ 202 Accepted`}</code>
-              </pre>
-              <div className="mt-4 flex flex-wrap gap-2">
-                <span className="rounded-full bg-caribbean-500/20 px-2.5 py-0.5 text-xs text-caribbean-300">
-                  Sandbox ready
-                </span>
-                <span className="rounded-full bg-atlantic-500/20 px-2.5 py-0.5 text-xs text-atlantic-200">
-                  OAuth 2.0
-                </span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

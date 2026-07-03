@@ -41,6 +41,14 @@
   --color-accent: var(--color-accent);
   --color-accent-foreground: var(--color-accent-foreground);
 
+  /* Theme-stable light surfaces (homepage cards & light sections) */
+  --color-surface-light: var(--color-surface-light);
+  --color-surface-light-foreground: var(--color-surface-light-foreground);
+  --color-surface-light-muted: var(--color-surface-light-muted);
+  --color-surface-light-subtle: var(--color-surface-light-subtle);
+  --color-surface-light-border: var(--color-surface-light-border);
+  --color-surface-light-soft: var(--color-surface-light-soft);
+
   /* Caribbean accent */
   --color-caribbean-50: var(--color-caribbean-50);
   --color-caribbean-100: var(--color-caribbean-100);

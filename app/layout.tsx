@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} h-full`} suppressHydrationWarning>
-      <body className="flex min-h-full flex-col antialiased">
+      <body className="flex min-h-full flex-col bg-surface-light-soft antialiased">
         <ThemeProvider>
           <GlobalNavigation />
           {children}

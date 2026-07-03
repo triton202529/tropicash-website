@@ -26,18 +26,23 @@ const problems = [
 
 export function ProblemSection() {
   return (
-    <HomeSection className="py-16 md:py-24" aria-labelledby="problem-heading">
+    <HomeSection
+      className="bg-surface-light-soft py-16 md:py-24"
+      aria-labelledby="problem-heading"
+    >
       <SectionHeader
         id="problem-heading"
         title="Caribbean payments should move faster."
         description="Many users and businesses still rely on fragmented banking, manual transfers, cash-heavy workflows, and limited online payment options. Tropicash is being built to close that gap with a secure, local-first payment platform."
+        light
       />
 
       <div className="mt-12 grid gap-4 sm:grid-cols-2">
         {problems.map((item) => (
           <Card
             key={item.title}
-            className="border-l-4 border-l-atlantic-400 bg-atlantic-50/40"
+            variant="light"
+            className="border-l-4 border-l-atlantic-400"
           >
             <CardHeader>
               <CardTitle className="text-base">{item.title}</CardTitle>

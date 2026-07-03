@@ -32,7 +32,7 @@ const governanceItems = [
 export function SecurityGovernance() {
   return (
     <HomeSection
-      className="border-t border-border bg-white py-16 md:py-24"
+      className="border-t border-surface-light-border bg-surface-light-soft py-16 md:py-24"
       aria-labelledby="security-heading"
     >
       <SectionHeader
@@ -40,12 +40,14 @@ export function SecurityGovernance() {
         title="Security and governance from the foundation."
         align="center"
         className="mx-auto"
+        light
       />
 
       <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {governanceItems.map((item, index) => (
           <Card
             key={item.title}
+            variant="light"
             className={index === 4 ? "sm:col-span-2 lg:col-span-1" : undefined}
           >
             <CardHeader>

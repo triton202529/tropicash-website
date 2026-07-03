@@ -52,15 +52,15 @@ const audiences = [
 export function AudienceStrip() {
   return (
     <HomeSection
-      className="border-y border-border bg-white py-12 md:py-16"
+      className="border-y border-surface-light-border bg-surface-light py-12 md:py-16"
       aria-label="Audiences we serve"
     >
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {audiences.map((item) => (
           <Card
             key={item.title}
-            variant="elevated"
-            className="border-atlantic-100 bg-gradient-to-b from-white to-atlantic-50/30 transition-shadow hover:shadow-lg"
+            variant="light"
+            className="transition-shadow hover:shadow-lg"
           >
             <CardHeader>
               <div

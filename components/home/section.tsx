@@ -12,7 +12,10 @@ export function HomeSection({
   ...props
 }: HomeSectionProps) {
   return (
-    <section className={cn("w-full", className)} {...props}>
+    <section
+      className={cn("w-full scroll-mt-20", className)}
+      {...props}
+    >
       <div
         className={cn(
           "mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-8",
@@ -31,7 +34,12 @@ type SectionHeaderProps = {
   description?: string;
   align?: "left" | "center";
   className?: string;
+  /** Dark navy section — white headings and light blue body text */
   dark?: boolean;
+  /** Light section — dark navy headings and slate body text (theme-stable) */
+  light?: boolean;
+  /** Badge accent: blue (default on light) or green success chip */
+  badgeTone?: "blue" | "green";
   id?: string;
 };
 
@@ -42,6 +50,8 @@ export function SectionHeader({
   align = "left",
   className,
   dark = false,
+  light = false,
+  badgeTone = "blue",
   id,
 }: SectionHeaderProps) {
   return (
@@ -58,7 +68,9 @@ export function SectionHeader({
             "mb-4 inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold tracking-wide uppercase",
             dark
               ? "bg-white/10 text-atlantic-100"
-              : "bg-atlantic-50 text-atlantic-700",
+              : badgeTone === "green"
+                ? "border border-caribbean-200 bg-caribbean-50 text-caribbean-700"
+                : "bg-atlantic-50 text-atlantic-700",
           )}
         >
           {badge}
@@ -67,8 +79,10 @@ export function SectionHeader({
       <h2
         id={id}
         className={cn(
-          "text-3xl font-bold tracking-tight md:text-4xl",
-          dark ? "text-white" : "text-foreground",
+          "scroll-mt-24 text-3xl font-bold tracking-tight md:text-4xl",
+          dark && "text-white",
+          light && "text-surface-light-foreground",
+          !dark && !light && "text-foreground",
         )}
       >
         {title}
@@ -77,7 +91,9 @@ export function SectionHeader({
         <p
           className={cn(
             "mt-4 text-lg leading-relaxed",
-            dark ? "text-atlantic-100/90" : "text-muted-foreground",
+            dark && "text-atlantic-100",
+            light && "text-surface-light-muted",
+            !dark && !light && "text-muted-foreground",
           )}
         >
           {description}

@@ -5,6 +5,8 @@ const variantStyles = {
   default: "bg-background border border-border shadow-xs",
   elevated: "bg-background border border-border shadow-md",
   outlined: "bg-transparent border-2 border-border",
+  light:
+    "bg-surface-light border border-surface-light-border text-surface-light-foreground shadow-md [&_[data-slot=card-description]]:text-surface-light-muted",
 } as const;
 
 export type CardVariant = keyof typeof variantStyles;
@@ -50,7 +52,10 @@ export const CardTitle = forwardRef<
 >(({ className, ...props }, ref) => (
   <h3
     ref={ref}
-    className={cn("text-lg font-semibold leading-none tracking-tight", className)}
+    className={cn(
+      "text-lg font-semibold leading-none tracking-tight",
+      className,
+    )}
     {...props}
   />
 ));
@@ -63,6 +68,7 @@ export const CardDescription = forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
+    data-slot="card-description"
     className={cn("text-sm text-muted-foreground", className)}
     {...props}
   />

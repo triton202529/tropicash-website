@@ -4,50 +4,46 @@ import { cn } from "@/lib/utils";
 
 export function FinalCta() {
   return (
-    <HomeSection className="pb-16 md:pb-24" aria-labelledby="final-cta-heading">
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-atlantic-700 via-atlantic-800 to-atlantic-900 px-8 py-14 text-center md:px-16 md:py-20">
-        {/* Decorative elements */}
-        <div
-          className="pointer-events-none absolute inset-0 overflow-hidden"
-          aria-hidden="true"
+    <HomeSection
+      className="bg-atlantic-50/60 pb-16 md:pb-24"
+      aria-labelledby="final-cta-heading"
+    >
+      <div className="rounded-3xl border border-atlantic-100 bg-white px-8 py-14 text-center shadow-lg md:px-16 md:py-20">
+        <h2
+          id="final-cta-heading"
+          className="scroll-mt-24 text-3xl font-bold tracking-tight text-surface-light-foreground md:text-4xl"
         >
-          <div className="absolute -top-12 -right-12 h-48 w-48 rounded-full bg-caribbean-400/10 blur-2xl" />
-          <div className="absolute -bottom-12 -left-12 h-48 w-48 rounded-full bg-atlantic-400/10 blur-2xl" />
-        </div>
+          Ready to shape the future of Caribbean payments?
+        </h2>
 
-        <div className="relative">
-          <h2
-            id="final-cta-heading"
-            className="text-3xl font-bold tracking-tight text-white md:text-4xl"
+        <p className="mx-auto mt-4 max-w-2xl text-lg text-surface-light-muted">
+          Explore the platform or start a partnership conversation with the
+          Tropicash team.
+        </p>
+
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <Link
+            href="/platform"
+            className={cn(
+              "inline-flex h-12 w-full items-center justify-center rounded-xl bg-caribbean-600 px-8",
+              "text-sm font-semibold text-white shadow-md transition-colors hover:bg-caribbean-700",
+              "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caribbean-500",
+              "focus-visible:ring-offset-2 sm:w-auto",
+            )}
           >
-            Ready to shape the future of Caribbean payments?
-          </h2>
-
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              href="/platform"
-              className={cn(
-                "inline-flex h-12 w-full items-center justify-center rounded-xl bg-caribbean-600 px-8",
-                "text-sm font-semibold text-white transition-colors hover:bg-caribbean-500",
-                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caribbean-400",
-                "focus-visible:ring-offset-2 focus-visible:ring-offset-atlantic-800 sm:w-auto",
-              )}
-            >
-              Explore Tropicash
-            </Link>
-            <Link
-              href="/contact"
-              className={cn(
-                "inline-flex h-12 w-full items-center justify-center rounded-xl border border-white/25",
-                "bg-white/10 px-8 text-sm font-semibold text-white backdrop-blur-sm",
-                "transition-colors hover:bg-white/20 focus-visible:outline-none",
-                "focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2",
-                "focus-visible:ring-offset-atlantic-800 sm:w-auto",
-              )}
-            >
-              Start a Partnership Conversation
-            </Link>
-          </div>
+            Explore Tropicash
+          </Link>
+          <Link
+            href="/contact"
+            className={cn(
+              "inline-flex h-12 w-full items-center justify-center rounded-xl border border-atlantic-200",
+              "bg-white px-8 text-sm font-semibold text-atlantic-700 shadow-xs",
+              "transition-colors hover:bg-atlantic-50 focus-visible:outline-none",
+              "focus-visible:ring-2 focus-visible:ring-atlantic-500 focus-visible:ring-offset-2 sm:w-auto",
+            )}
+          >
+            Start a Partnership Conversation
+          </Link>
         </div>
       </div>
     </HomeSection>
