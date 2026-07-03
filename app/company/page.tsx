@@ -1,15 +1,34 @@
 import type { Metadata } from "next";
-import { PageContainer } from "@/components/layout/page-container";
+import {
+  CompanyCaribbeanFocus,
+  CompanyCta,
+  CompanyGrowthPath,
+  CompanyHero,
+  CompanyMission,
+  CompanyOperatingModel,
+  CompanyPrinciples,
+  CompanyVision,
+} from "@/components/company";
 
 export const metadata: Metadata = {
-  title: "Company",
+  title: {
+    absolute: "Tropicash Company | Caribbean-First Payment Infrastructure",
+  },
+  description:
+    "Learn about Tropicash's mission to build Caribbean-first digital wallet, merchant payment, developer, and partner-ready payment infrastructure.",
 };
 
 export default function CompanyPage() {
   return (
-    <PageContainer>
-      <h1 className="text-3xl font-semibold tracking-tight">Company</h1>
-      <p className="mt-4 text-muted-foreground">Placeholder page.</p>
-    </PageContainer>
+    <>
+      <CompanyHero />
+      <CompanyMission />
+      <CompanyVision />
+      <CompanyPrinciples />
+      <CompanyCaribbeanFocus />
+      <CompanyOperatingModel />
+      <CompanyGrowthPath />
+      <CompanyCta />
+    </>
   );
 }
