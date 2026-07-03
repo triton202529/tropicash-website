@@ -1,15 +1,34 @@
 import type { Metadata } from "next";
-import { PageContainer } from "@/components/layout/page-container";
+import {
+  DeveloperApiFoundations,
+  DeveloperCapabilities,
+  DeveloperCta,
+  DeveloperGovernance,
+  DeveloperIntegrationJourney,
+  DeveloperReadiness,
+  DeveloperSandbox,
+  DevelopersHero,
+} from "@/components/developers";
 
 export const metadata: Metadata = {
-  title: "Developers",
+  title: {
+    absolute: "Tropicash Developers | Caribbean Payment API Platform",
+  },
+  description:
+    "Explore Tropicash developer tools for sandbox-first wallet integrations, merchant payments, app authorization, webhooks, and Caribbean payment infrastructure.",
 };
 
 export default function DevelopersPage() {
   return (
-    <PageContainer>
-      <h1 className="text-3xl font-semibold tracking-tight">Developers</h1>
-      <p className="mt-4 text-muted-foreground">Placeholder page.</p>
-    </PageContainer>
+    <>
+      <DevelopersHero />
+      <DeveloperSandbox />
+      <DeveloperCapabilities />
+      <DeveloperApiFoundations />
+      <DeveloperIntegrationJourney />
+      <DeveloperGovernance />
+      <DeveloperReadiness />
+      <DeveloperCta />
+    </>
   );
 }
