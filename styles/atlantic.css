@@ -1,0 +1,10 @@
+/**
+ * Atlantic Design System
+ * Central entry point for design tokens.
+ */
+
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/spacing.css";
+@import "./tokens/radius.css";
+@import "./tokens/shadows.css";
