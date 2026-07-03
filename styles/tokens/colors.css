@@ -40,6 +40,16 @@
   --color-info: #2563eb;
   --color-info-foreground: #ffffff;
 
+  /* Caribbean accent — mint green */
+  --color-caribbean-50: #ecfdf5;
+  --color-caribbean-100: #d1fae5;
+  --color-caribbean-200: #a7f3d0;
+  --color-caribbean-300: #6ee7b7;
+  --color-caribbean-400: #34d399;
+  --color-caribbean-500: #10b981;
+  --color-caribbean-600: #059669;
+  --color-caribbean-700: #047857;
+
   /* Surface */
   --color-background: var(--color-neutral-50);
   --color-foreground: var(--color-neutral-900);

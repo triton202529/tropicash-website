@@ -41,6 +41,17 @@
   --color-accent: var(--color-accent);
   --color-accent-foreground: var(--color-accent-foreground);
 
+  /* Caribbean accent */
+  --color-caribbean-50: var(--color-caribbean-50);
+  --color-caribbean-100: var(--color-caribbean-100);
+  --color-caribbean-200: var(--color-caribbean-200);
+  --color-caribbean-300: var(--color-caribbean-300);
+  --color-caribbean-400: var(--color-caribbean-400);
+  --color-caribbean-500: var(--color-caribbean-500);
+  --color-caribbean-600: var(--color-caribbean-600);
+  --color-caribbean-700: var(--color-caribbean-700);
+  --color-success: var(--color-success);
+
   /* Typography */
   --font-sans: var(--font-family-sans);
   --font-mono: var(--font-family-mono);

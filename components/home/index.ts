@@ -1,0 +1,10 @@
+export { HomeHero } from "./home-hero";
+export { AudienceStrip } from "./audience-strip";
+export { ProblemSection } from "./problem-section";
+export { PlatformPillars } from "./platform-pillars";
+export { EcosystemFlow } from "./ecosystem-flow";
+export { DeveloperBusinessCta } from "./developer-business-cta";
+export { SecurityGovernance } from "./security-governance";
+export { CaribbeanFirstSection } from "./caribbean-first-section";
+export { FinalCta } from "./final-cta";
+export { HomeSection, SectionHeader } from "./section";
