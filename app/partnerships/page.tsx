@@ -1,15 +1,35 @@
 import type { Metadata } from "next";
-import { PageContainer } from "@/components/layout/page-container";
+import {
+  PartnershipAudience,
+  PartnershipCta,
+  PartnershipGovernance,
+  PartnershipModel,
+  PartnershipOpportunities,
+  PartnershipReadiness,
+  PartnershipsHero,
+  PartnershipUseCases,
+} from "@/components/partnerships";
 
 export const metadata: Metadata = {
-  title: "Partnerships",
+  title: {
+    absolute:
+      "Tropicash Partnerships | Caribbean Payment Infrastructure Collaboration",
+  },
+  description:
+    "Explore Tropicash partnership opportunities for banks, merchants, developers, regional businesses, and Caribbean payment ecosystem partners.",
 };
 
 export default function PartnershipsPage() {
   return (
-    <PageContainer>
-      <h1 className="text-3xl font-semibold tracking-tight">Partnerships</h1>
-      <p className="mt-4 text-muted-foreground">Placeholder page.</p>
-    </PageContainer>
+    <>
+      <PartnershipsHero />
+      <PartnershipAudience />
+      <PartnershipOpportunities />
+      <PartnershipModel />
+      <PartnershipUseCases />
+      <PartnershipGovernance />
+      <PartnershipReadiness />
+      <PartnershipCta />
+    </>
   );
 }
