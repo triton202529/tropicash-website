@@ -1,15 +1,30 @@
 import type { Metadata } from "next";
-import { PageContainer } from "@/components/layout/page-container";
+import {
+  ContactAudienceCards,
+  ContactCta,
+  ContactExpectations,
+  ContactHero,
+  ContactPathways,
+  ContactReadiness,
+} from "@/components/contact";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: {
+    absolute: "Contact Tropicash | Caribbean Payment Infrastructure",
+  },
+  description:
+    "Choose the right contact path for Tropicash partnerships, developers, merchants, financial institutions, company inquiries, and security questions.",
 };
 
 export default function ContactPage() {
   return (
-    <PageContainer>
-      <h1 className="text-3xl font-semibold tracking-tight">Contact</h1>
-      <p className="mt-4 text-muted-foreground">Placeholder page.</p>
-    </PageContainer>
+    <>
+      <ContactHero />
+      <ContactPathways />
+      <ContactAudienceCards />
+      <ContactExpectations />
+      <ContactReadiness />
+      <ContactCta />
+    </>
   );
 }
