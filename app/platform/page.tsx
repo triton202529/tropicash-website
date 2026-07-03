@@ -1,15 +1,34 @@
 import type { Metadata } from "next";
-import { PageContainer } from "@/components/layout/page-container";
+import {
+  PlatformArchitecture,
+  PlatformAudience,
+  PlatformCapabilities,
+  PlatformCta,
+  PlatformGovernance,
+  PlatformHero,
+  PlatformLayerOverview,
+  PlatformReadiness,
+} from "@/components/platform";
 
 export const metadata: Metadata = {
-  title: "Platform",
+  title: {
+    absolute: "Tropicash Platform | Caribbean Digital Payment Infrastructure",
+  },
+  description:
+    "Explore the Tropicash platform for wallets, merchant payments, developer APIs, treasury controls, and Caribbean-first payment infrastructure.",
 };
 
 export default function PlatformPage() {
   return (
-    <PageContainer>
-      <h1 className="text-3xl font-semibold tracking-tight">Platform</h1>
-      <p className="mt-4 text-muted-foreground">Placeholder page.</p>
-    </PageContainer>
+    <>
+      <PlatformHero />
+      <PlatformLayerOverview />
+      <PlatformArchitecture />
+      <PlatformCapabilities />
+      <PlatformAudience />
+      <PlatformGovernance />
+      <PlatformReadiness />
+      <PlatformCta />
+    </>
   );
 }
