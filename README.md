@@ -47,6 +47,8 @@ docs/             Architecture and development documentation
 - [Website Architecture](docs/WEBSITE_ARCHITECTURE.md)
 - [Atlantic Design System](docs/ATLANTIC_DESIGN_SYSTEM.md)
 - [Development Guide](docs/DEVELOPMENT_GUIDE.md)
+- [Launch Readiness Review](docs/WEBSITE_LAUNCH_READINESS.md)
+- [Website QA Checklist](docs/WEBSITE_QA_CHECKLIST.md)
 
 ## License
 

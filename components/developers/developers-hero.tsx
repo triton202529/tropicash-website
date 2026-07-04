@@ -51,7 +51,7 @@ export function DevelopersHero() {
             <Link href="/platform" className={developersPrimaryLinkClass}>
               Explore the Platform
             </Link>
-            <Link href="/partnerships" className={developersSecondaryLinkClass}>
+            <Link href="/contact" className={developersSecondaryLinkClass}>
               Start a Partnership Conversation
             </Link>
           </div>

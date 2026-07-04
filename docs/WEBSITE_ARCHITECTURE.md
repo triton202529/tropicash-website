@@ -30,7 +30,7 @@ This project is a **standalone** Next.js application. It is not the wallet, admi
 tropicash-website/
 ├── app/                    # Routes and layouts (App Router)
 │   ├── layout.tsx          # Root layout with nav, footer, theme
-│   ├── page.tsx            # Home (foundation placeholder)
+│   ├── page.tsx            # Home
 │   ├── about/
 │   ├── platform/
 │   ├── developers/
@@ -66,7 +66,7 @@ All pages use `PageContainer` for consistent responsive padding and max-width.
 
 ## Routing
 
-Routes are file-based via the App Router. Each section has a minimal placeholder page with route-level metadata. Content and marketing sections will be built in subsequent phases.
+Routes are file-based via the App Router. Each public section has a designed page with route-level metadata. See [Launch Readiness Review](./WEBSITE_LAUNCH_READINESS.md) for the complete route inventory.
 
 ## SEO & Metadata
 
