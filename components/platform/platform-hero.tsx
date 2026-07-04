@@ -42,15 +42,15 @@ export function PlatformHero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-surface-light-muted">
-            Tropicash brings wallet accounts for sending, receiving, funding,
-            and managing money together with merchant payments, developer APIs,
-            treasury controls, and partner-ready infrastructure in one
-            Caribbean-first platform.
+            Tropicash is being built to bring wallet accounts for sending,
+            receiving, funding, and managing money together with merchant
+            payments, developer APIs, treasury controls, and partner-ready
+            infrastructure in one Caribbean-first platform.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link href="/developers" className={platformPrimaryLinkClass}>
-              Explore Developer Tools
+              View Developer Platform
             </Link>
             <Link href="/partnerships" className={platformSecondaryLinkClass}>
               Partner With Tropicash

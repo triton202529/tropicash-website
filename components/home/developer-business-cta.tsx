@@ -5,17 +5,17 @@ import { cn } from "@/lib/utils";
 const capabilityCards = [
   {
     title: "Merchant payments",
-    description: "Accept and manage Tropicash transactions",
-    status: "Available",
+    description: "Merchant payment acceptance being prepared",
+    status: "In development",
   },
   {
     title: "Wallet APIs",
-    description: "Integrate balances, transfers, and webhooks",
+    description: "Prepare wallet integrations for balances, transfers, and webhooks",
     status: "In development",
   },
   {
     title: "Partner rails",
-    description: "Connect banks and regulated payment flows",
+    description: "Partner-ready foundations for trusted financial institutions",
     status: "Partnerships",
   },
 ] as const;
@@ -24,7 +24,7 @@ export function DeveloperBusinessCta() {
   return (
     <HomeSection
       className="py-16 md:py-24"
-      aria-labelledby="developer-cta-heading"
+      aria-labelledby="home-developer-band-heading"
     >
       <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-atlantic-800 via-atlantic-900 to-atlantic-950 p-8 shadow-2xl md:p-12 lg:p-16">
         <div
@@ -38,7 +38,7 @@ export function DeveloperBusinessCta() {
         <div className="relative grid items-center gap-10 lg:grid-cols-2">
           <div>
             <SectionHeader
-              id="developer-cta-heading"
+              id="home-developer-band-heading"
               title="Build with Tropicash. Accept with Tropicash."
               description="From merchant payments to wallet APIs, Tropicash is preparing the tools businesses and developers need to build modern financial experiences across the Caribbean."
               dark
@@ -66,7 +66,7 @@ export function DeveloperBusinessCta() {
                   "focus-visible:ring-offset-atlantic-900",
                 )}
               >
-                Contact Partnerships
+                Contact Tropicash
               </Link>
             </div>
           </div>

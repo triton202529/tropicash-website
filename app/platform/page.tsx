@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     absolute: "Tropicash Platform | Caribbean Digital Payment Infrastructure",
   },
   description:
-    "Explore the Tropicash platform — wallet accounts for sending, receiving, and managing money, plus merchant payments, developer APIs, and Caribbean-first infrastructure.",
+    "Explore the Tropicash platform being built for wallet accounts, merchant payments, developer APIs, and Caribbean-first payment infrastructure.",
 };
 
 export default function PlatformPage() {

@@ -28,7 +28,7 @@ export function PlatformCta() {
           <Link href="/developers" className={platformPrimaryLinkWideClass}>
             View Developer Platform
           </Link>
-          <Link href="/partnerships" className={platformSecondaryLinkWideClass}>
+          <Link href="/contact" className={platformSecondaryLinkWideClass}>
             Start a Partnership Conversation
           </Link>
         </div>

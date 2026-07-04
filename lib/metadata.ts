@@ -4,9 +4,9 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://tropicash.com";
 
 export const siteConfig = {
   name: "Tropicash",
-  title: "Tropicash — Global Payments Infrastructure",
+  title: "Tropicash — Caribbean-First Digital Wallet & Payment Infrastructure",
   description:
-    "Tropicash is the official corporate website for customers, businesses, developers, payment providers, banks, partners, and investors.",
+    "Caribbean-first digital wallet and payment infrastructure for people, businesses, developers, and trusted partners.",
   url: siteUrl,
   locale: "en_US",
   creator: "Tropicash",

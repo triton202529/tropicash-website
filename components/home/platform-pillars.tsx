@@ -18,7 +18,7 @@ const pillars = [
   {
     title: "Merchant Payments",
     description:
-      "Tools for businesses to accept and manage Tropicash payments.",
+      "Tools being prepared for businesses to accept and manage Tropicash payments.",
     accent: "border-t-caribbean-500",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">

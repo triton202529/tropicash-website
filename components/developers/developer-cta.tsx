@@ -9,11 +9,11 @@ export function DeveloperCta() {
   return (
     <HomeSection
       className="bg-atlantic-50/60 pb-16 md:pb-24"
-      aria-labelledby="developer-cta-heading"
+      aria-labelledby="developers-page-cta-heading"
     >
       <div className="rounded-3xl border border-atlantic-100 bg-white px-8 py-14 text-center shadow-lg md:px-16 md:py-20">
         <h2
-          id="developer-cta-heading"
+          id="developers-page-cta-heading"
           className="scroll-mt-24 text-3xl font-bold tracking-tight text-surface-light-foreground md:text-4xl"
         >
           Build with Tropicash when the platform opens.
@@ -28,8 +28,8 @@ export function DeveloperCta() {
           <Link href="/platform" className={developersPrimaryLinkWideClass}>
             Explore Platform
           </Link>
-          <Link href="/partnerships" className={developersSecondaryLinkWideClass}>
-            Contact Partnerships
+          <Link href="/contact" className={developersSecondaryLinkWideClass}>
+            Contact Tropicash
           </Link>
         </div>
       </div>

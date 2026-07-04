@@ -42,7 +42,7 @@ const readinessItems: {
     statusLabel: "Planned",
   },
   {
-    label: "Live support workflow",
+    label: "Customer support workflow",
     status: "future",
     statusLabel: "Future phase",
   },

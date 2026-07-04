@@ -28,7 +28,7 @@ export function CompanyCta() {
           <Link href="/platform" className={companyPrimaryLinkWideClass}>
             Explore Platform
           </Link>
-          <Link href="/partnerships" className={companySecondaryLinkWideClass}>
+          <Link href="/contact" className={companySecondaryLinkWideClass}>
             Start a Partnership Conversation
           </Link>
         </div>

@@ -3,6 +3,8 @@ import { PageContainer } from "@/components/layout/page-container";
 
 export const metadata: Metadata = {
   title: "About",
+  description:
+    "About Tropicash — Caribbean-first digital wallet and payment infrastructure for people, businesses, developers, and trusted partners.",
 };
 
 export default function AboutPage() {

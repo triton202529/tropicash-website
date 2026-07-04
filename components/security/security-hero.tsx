@@ -51,8 +51,8 @@ export function SecurityHero() {
             <Link href="/platform" className={securityPrimaryLinkClass}>
               Explore the Platform
             </Link>
-            <Link href="/partnerships" className={securitySecondaryLinkClass}>
-              Contact Partnerships
+            <Link href="/contact" className={securitySecondaryLinkClass}>
+              Contact Tropicash
             </Link>
           </div>
         </div>

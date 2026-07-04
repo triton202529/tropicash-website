@@ -16,7 +16,7 @@ const flowSteps = [
   },
   {
     label: "Merchant / Developer / Partner",
-    description: "Connected payment and financial ecosystem",
+    description: "Planned payment and financial ecosystem connectivity",
     iconColor: "bg-caribbean-600",
     featured: false,
   },

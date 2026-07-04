@@ -15,7 +15,7 @@ import { siteConfig } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: siteConfig.title,
   description:
-    "Send, receive, and manage money with a Caribbean-first digital wallet — plus merchant payments, business tools, and developer-ready APIs.",
+    "Caribbean-first digital wallet and payment infrastructure being built for people, businesses, developers, and trusted partners.",
 };
 
 export default function Home() {

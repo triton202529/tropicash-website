@@ -28,8 +28,8 @@ export function SecurityCta() {
           <Link href="/platform" className={securityPrimaryLinkWideClass}>
             Explore Platform
           </Link>
-          <Link href="/partnerships" className={securitySecondaryLinkWideClass}>
-            Contact Partnerships
+          <Link href="/contact" className={securitySecondaryLinkWideClass}>
+            Contact Tropicash
           </Link>
         </div>
       </div>
