@@ -19,7 +19,7 @@ const growthItems: {
   { label: "Developer messaging", status: "active", statusLabel: "Active" },
   { label: "Security messaging", status: "active", statusLabel: "Active" },
   { label: "Partnership messaging", status: "active", statusLabel: "Active" },
-  { label: "Contact pathway", status: "planned", statusLabel: "Planned" },
+  { label: "Contact pathway", status: "active", statusLabel: "Active" },
   {
     label: "Product expansion",
     status: "in-progress",

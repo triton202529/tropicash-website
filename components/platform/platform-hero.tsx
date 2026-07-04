@@ -7,7 +7,7 @@ import {
 } from "./platform-links";
 
 const heroLayers = [
-  { label: "Wallet Layer", chip: "User accounts" },
+  { label: "Wallet Layer", chip: "Send & receive" },
   { label: "Merchant Layer", chip: "Business payments" },
   { label: "Developer API Layer", chip: "Integration" },
   { label: "Treasury & Governance", chip: "Oversight" },
@@ -42,9 +42,10 @@ export function PlatformHero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-surface-light-muted">
-            Tropicash brings wallet accounts, merchant payments, developer APIs,
-            treasury controls, and partner-ready payment infrastructure into a
-            single Caribbean-first platform.
+            Tropicash brings wallet accounts for sending, receiving, funding,
+            and managing money together with merchant payments, developer APIs,
+            treasury controls, and partner-ready infrastructure in one
+            Caribbean-first platform.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">

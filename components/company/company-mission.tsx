@@ -4,14 +4,14 @@ import { CompanyIconTile } from "./company-icons";
 
 const missionCards = [
   {
-    title: "Help people move money digitally",
+    title: "Help people send and receive money",
     description:
-      "Support wallet-based experiences for sending, receiving, funding, and managing money.",
+      "Support wallet-based experiences for sending, receiving, funding, and managing everyday money.",
   },
   {
     title: "Help businesses accept payments",
     description:
-      "Prepare tools that allow merchants and service providers to participate in digital commerce.",
+      "Prepare merchant tools for customer payments and digital commerce.",
   },
   {
     title: "Help the ecosystem connect",
@@ -28,8 +28,8 @@ export function CompanyMission() {
     >
       <SectionHeader
         id="company-mission-heading"
-        title="Our mission is to make Caribbean digital payments more accessible."
-        description="Tropicash is being developed to help people, businesses, developers, and trusted partners participate in a more connected digital payment ecosystem."
+        title="Our mission is to make sending and receiving money easier across the Caribbean."
+        description="Tropicash is being developed to help people move money digitally, help businesses accept payments, and help developers and trusted partners connect to a more modern Caribbean payment ecosystem."
         light
       />
 

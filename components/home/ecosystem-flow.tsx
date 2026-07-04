@@ -4,19 +4,19 @@ import { cn } from "@/lib/utils";
 const flowSteps = [
   {
     label: "User Wallet",
-    description: "Send, receive, and manage funds",
+    description: "Send, receive, fund, and manage money",
     iconColor: "bg-atlantic-500",
     featured: false,
   },
   {
     label: "Tropicash Platform",
-    description: "Secure payment infrastructure",
+    description: "Wallet, payment, and governance infrastructure",
     iconColor: "bg-atlantic-600",
     featured: true,
   },
   {
-    label: "Merchant / Developer / Bank Partner",
-    description: "Connected financial ecosystem",
+    label: "Merchant / Developer / Partner",
+    description: "Connected payment and financial ecosystem",
     iconColor: "bg-caribbean-600",
     featured: false,
   },

@@ -5,7 +5,7 @@ const audiences = [
   {
     title: "Consumers",
     description:
-      "A wallet experience for sending, receiving, funding, and managing money.",
+      "Send money, receive money, fund your wallet, and manage everyday balances.",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
         <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />

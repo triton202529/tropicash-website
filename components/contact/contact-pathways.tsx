@@ -6,6 +6,13 @@ import { contactCardLinkClass } from "./contact-links";
 
 const pathways = [
   {
+    title: "Wallet and User Interest",
+    description:
+      "For questions about Tropicash's planned wallet experience for sending, receiving, funding, and managing money.",
+    cta: "Explore Platform",
+    href: "/platform",
+  },
+  {
     title: "Partnerships",
     description:
       "For banks, financial institutions, regional businesses, and ecosystem collaborators exploring future collaboration.",
@@ -22,7 +29,7 @@ const pathways = [
   {
     title: "Merchants and Businesses",
     description:
-      "For businesses interested in merchant payment acceptance, wallet use cases, and digital commerce readiness.",
+      "For businesses interested in merchant payment acceptance and digital commerce readiness.",
     cta: "Explore Platform",
     href: "/platform",
   },

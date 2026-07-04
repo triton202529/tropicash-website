@@ -8,7 +8,7 @@ import {
 
 const heroLayers = [
   { label: "Caribbean-first", chip: "Mission" },
-  { label: "Wallet infrastructure", chip: "Users" },
+  { label: "Wallet infrastructure", chip: "Send & receive" },
   { label: "Merchant payments", chip: "Business" },
   { label: "Developer platform", chip: "Build" },
   { label: "Partner readiness", chip: "Connect" },
@@ -42,9 +42,10 @@ export function CompanyHero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-surface-light-muted">
-            Tropicash is being built to support digital wallets, merchant
-            payments, developer integrations, and trusted financial partnerships
-            across the Caribbean.
+            Tropicash is being built to help people send, receive, fund, and
+            manage money through digital wallets — while supporting merchant
+            payments, developer integrations, and trusted financial
+            partnerships across the Caribbean.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">

@@ -13,8 +13,8 @@ export function GlobalFooter() {
           <div className="sm:col-span-2 lg:col-span-1">
             <p className="text-lg font-semibold text-white">{siteConfig.name}</p>
             <p className="mt-2 max-w-xs text-sm text-atlantic-200">
-              Global payments infrastructure for customers, businesses, and
-              partners.
+              Caribbean-first wallet and payment infrastructure for people,
+              businesses, developers, and trusted partners.
             </p>
           </div>
 

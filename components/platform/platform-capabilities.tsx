@@ -3,14 +3,29 @@ import { HomeSection, SectionHeader } from "@/components/home/section";
 
 const capabilities = [
   {
-    title: "Digital wallets",
+    title: "Send money",
     description:
-      "Foundation for user accounts, balances, and wallet activity designed for Caribbean commerce.",
+      "Wallet foundations designed to support person-to-person money movement within the Tropicash ecosystem.",
   },
   {
-    title: "Peer-to-peer transfers",
+    title: "Receive money",
     description:
-      "Built to support person-to-person value movement within the Tropicash ecosystem.",
+      "Being built to help people receive funds into a digital wallet with clear activity records.",
+  },
+  {
+    title: "Fund wallet",
+    description:
+      "Funding readiness designed to support adding money to a wallet account.",
+  },
+  {
+    title: "Manage balance",
+    description:
+      "Balance management foundations for everyday wallet use and visibility.",
+  },
+  {
+    title: "Wallet activity and transaction history",
+    description:
+      "Activity records designed to support wallet history, review, and reconciliation needs.",
   },
   {
     title: "Merchant payment acceptance",
@@ -23,34 +38,14 @@ const capabilities = [
       "API foundations for integrating wallet and payment capabilities into applications.",
   },
   {
-    title: "OAuth and app authorization readiness",
+    title: "Treasury and governance",
     description:
-      "Authorization patterns being prepared for secure third-party application access.",
+      "Structured review processes and operational controls built to support responsible platform growth.",
   },
   {
-    title: "Webhook and event readiness",
+    title: "Partner connectivity readiness",
     description:
-      "Event notification foundations designed to support integration workflows.",
-  },
-  {
-    title: "Withdrawal and payout oversight",
-    description:
-      "Operational visibility designed to support controlled payout processes.",
-  },
-  {
-    title: "Treasury review workflows",
-    description:
-      "Structured review processes built to support responsible treasury operations.",
-  },
-  {
-    title: "Risk and fraud monitoring",
-    description:
-      "Monitoring foundations designed to help identify and respond to suspicious activity.",
-  },
-  {
-    title: "Audit-ready records",
-    description:
-      "Transaction logging designed to support audit, reconciliation, and oversight needs.",
+      "Future-ready foundations for trusted financial institutions and regulated payment partners.",
   },
 ] as const;
 
@@ -63,6 +58,7 @@ export function PlatformCapabilities() {
       <SectionHeader
         id="platform-capabilities-heading"
         title="Core capabilities for a modern payment network."
+        description="At the center is the wallet — send, receive, fund, and manage money — supported by merchant, developer, treasury, and partner foundations."
         light
       />
 

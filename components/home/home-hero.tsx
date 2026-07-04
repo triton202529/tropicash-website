@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 const platformLayers = [
   {
     label: "Tropicash Wallet",
-    description: "Balances & transfers",
+    description: "Send, receive, fund & balance",
     accent: "bg-atlantic-50 text-atlantic-700",
   },
   {
@@ -26,10 +26,10 @@ const platformLayers = [
 ] as const;
 
 const visualChips = [
-  "Wallet ready",
-  "Secure transaction",
-  "API approved",
-  "Merchant payment",
+  "Send money",
+  "Receive money",
+  "Fund wallet",
+  "Merchant payments",
   "Caribbean-ready",
 ] as const;
 
@@ -50,20 +50,22 @@ export function HomeHero() {
       <div className="relative grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div>
           <span className="inline-flex items-center rounded-full border border-caribbean-200 bg-caribbean-50 px-3 py-1 text-xs font-semibold tracking-wide text-caribbean-700 uppercase shadow-xs">
-            Caribbean-first payment platform
+            Caribbean-first digital wallet
           </span>
 
           <h1
             id="hero-heading"
             className="mt-6 scroll-mt-24 text-4xl font-bold tracking-tight text-surface-light-foreground md:text-5xl lg:text-[3.25rem] lg:leading-[1.1]"
           >
-            Digital money infrastructure for the Caribbean.
+            Send, receive, and manage money with Caribbean-first digital wallet
+            infrastructure.
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-surface-light-muted">
-            Tropicash brings wallets, payments, business tools, and
-            developer-ready financial APIs into one secure platform built for
-            Caribbean commerce.
+            Tropicash is being built to help people send, receive, fund, and
+            manage money from a digital wallet — while giving businesses,
+            developers, and trusted partners the foundation for modern Caribbean
+            payments.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">

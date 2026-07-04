@@ -7,10 +7,10 @@ import {
 } from "./contact-links";
 
 const heroLayers = [
+  { label: "Wallet & Users", chip: "Send & receive" },
   { label: "Partnerships", chip: "Collaborate" },
   { label: "Developers", chip: "Build" },
   { label: "Merchants", chip: "Commerce" },
-  { label: "Financial Institutions", chip: "Institutions" },
   { label: "General Inquiries", chip: "Company" },
 ] as const;
 
@@ -42,9 +42,10 @@ export function ContactHero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-surface-light-muted">
-            Tropicash is preparing Caribbean-first wallet, payment, developer,
-            and partner infrastructure. Choose the contact path that best matches
-            your interest.
+            Tropicash is preparing Caribbean-first wallet infrastructure for
+            sending, receiving, funding, and managing money — along with
+            merchant, developer, and partner pathways. Choose the contact path
+            that best matches your interest.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">

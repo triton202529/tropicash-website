@@ -2,15 +2,15 @@ import { HomeSection, SectionHeader } from "@/components/home/section";
 import { cn } from "@/lib/utils";
 
 const flowSteps = [
-  { label: "User Wallet", description: "Send, receive, and manage funds" },
+  { label: "User Wallet", description: "Send, receive, fund, and manage money" },
   {
     label: "Tropicash Platform Core",
-    description: "Secure payment infrastructure",
+    description: "Wallet, payment, and governance infrastructure",
     featured: true,
   },
   {
     label: "Merchant / Developer / Partner",
-    description: "Connected ecosystem endpoints",
+    description: "Connected payment and financial ecosystem",
   },
 ] as const;
 

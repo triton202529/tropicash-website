@@ -6,7 +6,7 @@ const layers = [
   {
     title: "Wallet Layer",
     description:
-      "User-facing balances, transfers, funding readiness, and transaction history.",
+      "User-facing wallet accounts for sending, receiving, funding, balance management, and transaction history.",
     accent: "border-t-atlantic-500",
   },
   {

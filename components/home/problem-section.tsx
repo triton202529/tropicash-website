@@ -3,19 +3,19 @@ import { HomeSection, SectionHeader } from "./section";
 
 const problems = [
   {
-    title: "Fragmented payment options",
+    title: "Difficult person-to-person transfers",
     description:
-      "Users and businesses navigate multiple channels with inconsistent experiences.",
+      "Sending and receiving money between people can still feel fragmented, slow, or inconvenient.",
   },
   {
-    title: "Slow settlement experiences",
+    title: "Fragmented ways to send and receive money",
     description:
-      "Transfers and payouts often take longer than modern commerce demands.",
+      "People often navigate multiple channels instead of one consistent wallet-based experience.",
   },
   {
-    title: "Limited developer access",
+    title: "Limited wallet-based money movement",
     description:
-      "Few platforms offer open APIs for Caribbean financial innovation.",
+      "Everyday digital wallet use — funding, balance management, and activity history — remains uneven across the region.",
   },
   {
     title: "Cash-heavy business workflows",
@@ -33,7 +33,7 @@ export function ProblemSection() {
       <SectionHeader
         id="problem-heading"
         title="Caribbean payments should move faster."
-        description="Many users and businesses still rely on fragmented banking, manual transfers, cash-heavy workflows, and limited online payment options. Tropicash is being built to close that gap with a secure, local-first payment platform."
+        description="Many people and businesses still rely on fragmented ways to send and receive money, limited wallet-based movement, cash-heavy workflows, and uneven digital payment options. Tropicash is being built to close that gap with a secure, local-first digital wallet and payment platform."
         light
       />
 

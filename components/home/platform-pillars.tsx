@@ -6,7 +6,7 @@ const pillars = [
   {
     title: "Digital Wallet",
     description:
-      "User balances, funding, transfers, and transaction history.",
+      "Wallet accounts designed for sending, receiving, funding, balance management, and transaction history.",
     accent: "border-t-atlantic-500",
     icon: (
       <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
@@ -72,7 +72,7 @@ export function PlatformPillars() {
     >
       <SectionHeader
         id="pillars-heading"
-        title="One platform. Multiple payment layers."
+        title="One platform. Wallet first. Multiple payment layers."
         align="center"
         className="mx-auto"
         light
