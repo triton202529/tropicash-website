@@ -18,18 +18,18 @@ export function GlobalNavigation() {
             <Link
               href="/"
               className={cn(
-                "inline-flex shrink-0 items-center rounded-lg bg-white px-2.5 py-1.5",
+                "inline-flex shrink-0 items-center rounded-md bg-white px-2 py-1 shadow-sm",
                 "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caribbean-400",
                 "focus-visible:ring-offset-2 focus-visible:ring-offset-atlantic-800",
               )}
             >
               <Image
-                src="/brand/tropicash-logo-horizontal.jpg"
+                src="/brand/tropicash-logo-horizontal-header.png"
                 alt="Tropicash"
-                width={160}
-                height={36}
+                width={270}
+                height={108}
                 priority
-                className="h-7 w-auto max-w-[140px] object-contain sm:h-8 sm:max-w-[160px] md:h-9"
+                className="h-8 w-auto object-contain sm:h-9 md:h-10"
               />
             </Link>
 
