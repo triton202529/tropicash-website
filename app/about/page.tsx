@@ -1,17 +1,30 @@
 import type { Metadata } from "next";
-import { PageContainer } from "@/components/layout/page-container";
+import {
+  AboutAudience,
+  AboutBuildPath,
+  AboutCta,
+  AboutHero,
+  AboutWhatIs,
+  AboutWhyItMatters,
+} from "@/components/about";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: {
+    absolute: "About Tropicash | Caribbean-First Digital Wallet Platform",
+  },
   description:
-    "About Tropicash — Caribbean-first digital wallet and payment infrastructure for people, businesses, developers, and trusted partners.",
+    "Learn what Tropicash is being built to become — a Caribbean-first digital wallet and payment platform for everyday money movement, businesses, developers, and trusted partners.",
 };
 
 export default function AboutPage() {
   return (
-    <PageContainer>
-      <h1 className="text-3xl font-semibold tracking-tight">About</h1>
-      <p className="mt-4 text-muted-foreground">Placeholder page.</p>
-    </PageContainer>
+    <>
+      <AboutHero />
+      <AboutWhatIs />
+      <AboutWhyItMatters />
+      <AboutAudience />
+      <AboutBuildPath />
+      <AboutCta />
+    </>
   );
 }

@@ -1,17 +1,30 @@
 import type { Metadata } from "next";
-import { PageContainer } from "@/components/layout/page-container";
+import {
+  LegalContact,
+  LegalDisclosures,
+  LegalFuturePolicies,
+  LegalHero,
+  LegalImportantNotice,
+  LegalWebsiteNotices,
+} from "@/components/legal";
 
 export const metadata: Metadata = {
-  title: "Legal",
+  title: {
+    absolute: "Tropicash Legal | Website Notices & Development-Stage Information",
+  },
   description:
-    "Legal information for Tropicash — Caribbean-first digital wallet and payment infrastructure.",
+    "Legal information and website notices for the Tropicash corporate website. Development-stage information only — not final product terms, privacy policy, or financial service disclosures.",
 };
 
 export default function LegalPage() {
   return (
-    <PageContainer>
-      <h1 className="text-3xl font-semibold tracking-tight">Legal</h1>
-      <p className="mt-4 text-muted-foreground">Placeholder page.</p>
-    </PageContainer>
+    <>
+      <LegalHero />
+      <LegalImportantNotice />
+      <LegalWebsiteNotices />
+      <LegalFuturePolicies />
+      <LegalDisclosures />
+      <LegalContact />
+    </>
   );
 }
