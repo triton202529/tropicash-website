@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { primaryNavigation } from "@/lib/navigation";
 import { cn } from "@/lib/utils";
@@ -16,9 +17,20 @@ export function GlobalNavigation() {
           <div className="flex items-center gap-8">
             <Link
               href="/"
-              className="text-lg font-semibold tracking-tight text-white"
+              className={cn(
+                "inline-flex shrink-0 items-center rounded-lg bg-white px-2.5 py-1.5",
+                "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caribbean-400",
+                "focus-visible:ring-offset-2 focus-visible:ring-offset-atlantic-800",
+              )}
             >
-              Tropicash
+              <Image
+                src="/brand/tropicash-logo-horizontal.jpg"
+                alt="Tropicash"
+                width={160}
+                height={36}
+                priority
+                className="h-7 w-auto max-w-[140px] object-contain sm:h-8 sm:max-w-[160px] md:h-9"
+              />
             </Link>
 
             <ul className="hidden items-center gap-6 md:flex">

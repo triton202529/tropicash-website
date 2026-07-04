@@ -52,6 +52,10 @@ export const defaultMetadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: "/brand/tropicash-icon.png",
+    apple: "/brand/tropicash-icon.png",
+  },
 };
 
 export const defaultViewport: Viewport = {

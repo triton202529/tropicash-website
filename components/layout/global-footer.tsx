@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { footerNavigation } from "@/lib/navigation";
 import { siteConfig } from "@/lib/metadata";
@@ -11,7 +12,17 @@ export function GlobalFooter() {
       <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 lg:px-8">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-1">
-            <p className="text-lg font-semibold text-white">{siteConfig.name}</p>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/brand/tropicash-icon.png"
+                alt=""
+                width={36}
+                height={36}
+                className="h-9 w-9 shrink-0 object-contain"
+                aria-hidden
+              />
+              <p className="text-lg font-semibold text-white">{siteConfig.name}</p>
+            </div>
             <p className="mt-2 max-w-xs text-sm text-atlantic-200">
               Caribbean-first wallet and payment infrastructure for people,
               businesses, developers, and trusted partners.
