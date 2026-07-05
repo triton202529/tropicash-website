@@ -18,19 +18,25 @@ export function GlobalNavigation() {
             <Link
               href="/"
               className={cn(
-                "inline-flex shrink-0 items-center rounded-md bg-white px-2 py-1 shadow-sm",
+                "inline-flex shrink-0 items-center gap-2 rounded-md bg-white px-2.5 py-1 shadow-sm",
                 "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-caribbean-400",
                 "focus-visible:ring-offset-2 focus-visible:ring-offset-atlantic-800",
               )}
             >
               <Image
-                src="/brand/tropicash-logo-horizontal-header.png"
+                src="/brand/tropicash-icon.png"
                 alt="Tropicash"
-                width={248}
-                height={104}
+                width={32}
+                height={32}
                 priority
-                className="h-8 w-auto object-contain sm:h-9 md:h-10"
+                className="h-7 w-7 object-contain sm:h-8 sm:w-8"
               />
+              <span
+                aria-hidden="true"
+                className="text-base font-bold lowercase tracking-tight text-caribbean-700 sm:text-lg"
+              >
+                tropicash
+              </span>
             </Link>
 
             <ul className="hidden items-center gap-6 md:flex">
