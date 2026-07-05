@@ -36,7 +36,7 @@ export function CompanyOperatingModel() {
       >
         <div className="border-b border-atlantic-100 bg-atlantic-50/50 px-5 py-3">
           <span className="text-sm font-semibold text-atlantic-900">
-            Platform layers — illustrative
+            Platform layers, illustrative
           </span>
         </div>
 

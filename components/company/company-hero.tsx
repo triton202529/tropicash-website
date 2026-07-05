@@ -43,7 +43,7 @@ export function CompanyHero() {
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-surface-light-muted">
             Tropicash is being built to help people send, receive, fund, and
-            manage money through digital wallets — while supporting merchant
+            manage money through digital wallets while supporting merchant
             payments, developer integrations, and trusted financial
             partnerships across the Caribbean.
           </p>

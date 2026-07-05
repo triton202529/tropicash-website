@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     absolute: "About Tropicash | Caribbean-First Digital Wallet Platform",
   },
   description:
-    "Learn what Tropicash is being built to become — a Caribbean-first digital wallet and payment platform for everyday money movement, businesses, developers, and trusted partners.",
+    "Learn what Tropicash is being built to become: a digital wallet and payment platform for the Caribbean, focused on everyday money movement, businesses, developers, and trusted partners.",
 };
 
 export default function AboutPage() {

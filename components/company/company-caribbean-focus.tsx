@@ -44,7 +44,7 @@ export function CompanyCaribbeanFocus() {
       <SectionHeader
         id="company-caribbean-heading"
         title="Designed around Caribbean realities."
-        description="Tropicash is being shaped with the needs of Caribbean users, merchants, banks, developers, and businesses in mind — including fragmented payment options, cash-heavy workflows, limited digital access, and the need for trusted local-first financial infrastructure."
+        description="Tropicash is being shaped with the needs of Caribbean users, merchants, banks, developers, and businesses in mind, including fragmented payment options, cash-heavy workflows, limited digital access, and the need for trusted local-first financial infrastructure."
         light
         badge="Caribbean-first"
         badgeTone="green"

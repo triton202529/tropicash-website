@@ -15,7 +15,7 @@ const problems = [
   {
     title: "Limited wallet-based money movement",
     description:
-      "Everyday digital wallet use — funding, balance management, and activity history — remains uneven across the region.",
+      "Everyday digital wallet use, including funding, balance management, and activity history, remains uneven across the region.",
   },
   {
     title: "Cash-heavy business workflows",

@@ -32,7 +32,7 @@ export function CaribbeanFirstSection() {
         <SectionHeader
           id="caribbean-heading"
           title="Designed for the Caribbean first."
-          description="Tropicash is being built with Caribbean users, merchants, banks, and digital businesses in mind — starting locally, with the long-term goal of supporting broader regional financial connectivity."
+          description="Tropicash is being built with Caribbean users, merchants, banks, and digital businesses in mind, starting locally with the long-term goal of supporting broader regional financial connectivity."
           light
           badge="Regional focus"
           badgeTone="green"
@@ -99,7 +99,7 @@ export function CaribbeanFirstSection() {
 
           <div className="absolute bottom-6 left-6 right-6 rounded-xl border border-atlantic-100 bg-white px-4 py-3 shadow-sm">
             <p className="text-xs font-medium text-atlantic-700">
-              Regional connectivity — illustrative network map
+              Regional connectivity, illustrative network map
             </p>
           </div>
         </div>

@@ -4,7 +4,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://tropicash.com";
 
 export const siteConfig = {
   name: "Tropicash",
-  title: "Tropicash — Caribbean-First Digital Wallet & Payment Infrastructure",
+  title: "Tropicash: Caribbean-First Digital Wallet & Payment Infrastructure",
   description:
     "Tropicash is a Caribbean-first digital wallet and payment infrastructure platform being built for people, businesses, developers, and trusted partners.",
   url: siteUrl,
@@ -16,7 +16,7 @@ const ogImage = {
   url: "/brand/tropicash-og-image.png",
   width: 1200,
   height: 630,
-  alt: "Tropicash — Caribbean-first digital wallet and payment infrastructure",
+  alt: "Tropicash, Caribbean-first digital wallet and payment infrastructure",
 } as const;
 
 export const defaultMetadata: Metadata = {

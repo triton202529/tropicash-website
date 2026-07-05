@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     absolute: "Tropicash Legal | Website Notices & Development-Stage Information",
   },
   description:
-    "Legal information and website notices for the Tropicash corporate website. Development-stage information only — not final product terms, privacy policy, or financial service disclosures.",
+    "Legal information and website notices for the Tropicash corporate website. Development-stage information only, not final product terms, privacy policy, or financial service disclosures.",
 };
 
 export default function LegalPage() {

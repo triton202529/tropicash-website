@@ -58,7 +58,7 @@ export function PlatformCapabilities() {
       <SectionHeader
         id="platform-capabilities-heading"
         title="Core capabilities for a modern payment network."
-        description="At the center is the wallet — send, receive, fund, and manage money — supported by merchant, developer, treasury, and partner foundations."
+        description="At the center is the wallet for sending, receiving, funding, and managing money, supported by merchant, developer, treasury, and partner foundations."
         light
       />
 

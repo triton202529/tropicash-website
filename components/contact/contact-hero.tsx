@@ -43,7 +43,7 @@ export function ContactHero() {
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-surface-light-muted">
             Tropicash is preparing Caribbean-first wallet infrastructure for
-            sending, receiving, funding, and managing money — along with
+            sending, receiving, funding, and managing money, along with
             merchant, developer, and partner pathways. Choose the contact path
             that best matches your interest.
           </p>
