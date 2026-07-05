@@ -26,8 +26,8 @@ export function GlobalNavigation() {
               <Image
                 src="/brand/tropicash-logo-horizontal-header.png"
                 alt="Tropicash"
-                width={270}
-                height={108}
+                width={248}
+                height={104}
                 priority
                 className="h-8 w-auto object-contain sm:h-9 md:h-10"
               />
