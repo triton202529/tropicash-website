@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     absolute: "Tropicash Developers | Caribbean Payment API Platform",
   },
   description:
-    "Explore Tropicash developer tools for sandbox-first wallet integrations, merchant payments, app authorization, webhooks, and Caribbean payment infrastructure.",
+    "Explore Tropicash developer foundations being prepared for sandbox-first wallet integrations, merchant payments, app authorization, webhooks, and Caribbean payment infrastructure.",
 };
 
 export default function DevelopersPage() {

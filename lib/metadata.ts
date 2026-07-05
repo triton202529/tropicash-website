@@ -6,14 +6,22 @@ export const siteConfig = {
   name: "Tropicash",
   title: "Tropicash — Caribbean-First Digital Wallet & Payment Infrastructure",
   description:
-    "Caribbean-first digital wallet and payment infrastructure for people, businesses, developers, and trusted partners.",
+    "Tropicash is a Caribbean-first digital wallet and payment infrastructure platform being built for people, businesses, developers, and trusted partners.",
   url: siteUrl,
   locale: "en_US",
   creator: "Tropicash",
 } as const;
 
+const ogImage = {
+  url: "/brand/tropicash-og-image.png",
+  width: 1200,
+  height: 630,
+  alt: "Tropicash — Caribbean-first digital wallet and payment infrastructure",
+} as const;
+
 export const defaultMetadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  applicationName: siteConfig.name,
   title: {
     default: siteConfig.title,
     template: `%s | ${siteConfig.name}`,
@@ -21,10 +29,10 @@ export const defaultMetadata: Metadata = {
   description: siteConfig.description,
   keywords: [
     "Tropicash",
-    "payments",
+    "Caribbean payments",
+    "digital wallet",
+    "payment infrastructure",
     "fintech",
-    "cross-border payments",
-    "financial infrastructure",
   ],
   authors: [{ name: siteConfig.creator }],
   creator: siteConfig.creator,
@@ -35,11 +43,13 @@ export const defaultMetadata: Metadata = {
     siteName: siteConfig.name,
     title: siteConfig.title,
     description: siteConfig.description,
+    images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
+    images: [ogImage.url],
   },
   robots: {
     index: true,

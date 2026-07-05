@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       "Tropicash Partnerships | Caribbean Payment Infrastructure Collaboration",
   },
   description:
-    "Explore Tropicash partnership opportunities for banks, merchants, developers, regional businesses, and Caribbean payment ecosystem partners.",
+    "Explore Tropicash partnership pathways being prepared for banks, merchants, developers, regional businesses, and Caribbean payment ecosystem partners.",
 };
 
 export default function PartnershipsPage() {
