@@ -26,10 +26,10 @@ export function GlobalNavigation() {
               <Image
                 src="/brand/tropicash-icon.png"
                 alt="Tropicash"
-                width={32}
-                height={32}
+                width={36}
+                height={36}
                 priority
-                className="h-7 w-7 object-contain sm:h-8 sm:w-8"
+                className="h-8 w-8 object-contain sm:h-9 sm:w-9"
               />
               <span
                 aria-hidden="true"
